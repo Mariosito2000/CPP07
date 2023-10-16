@@ -5,10 +5,10 @@
 #include <iostream>
 
 template< typename T, typename f >
-void	iter(T *a, size_t len, f func)
+void	iter(T &array, size_t len, f func)
 {
 	for (size_t i = 0; i < len; i++)
-		func((*a)[i]);
+		func(array[i]);
 }
 
 #endif
